@@ -1,13 +1,77 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+html, body, #root, .app {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.app .header {
+  height: 100px;
+  width:100%;
+  background-color: #1a2531;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.app .header a {
+  display: block;
+  text-decoration: none;
+  /* font-size: 24px;
+  color: #fff; */
+}
+
+.app .main {
+  flex: 1;
+  background-color: #fff;
+  width:100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.app .footer {
+  height: 100px;
+  width:100%;
+  background-color: #135194;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color:#fff;
+}
+
+.active {
+  color: greenyellow !important;
+  font-weight: bold
+}
+
+.message {
+  height: 100%;
+  width: 100%;
+}
+
+.message-header {
+  height: 50px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.message-header a {
+  text-decoration: none
+}
+
+.message-main {
+  flex: 1;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
 }
