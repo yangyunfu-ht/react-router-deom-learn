@@ -1,4 +1,5 @@
 import React from "react";
+import CountHook from "../hooks/CountHook.js";
 
 class Home extends React.Component {
   constructor (props) {
@@ -34,6 +35,8 @@ class Home extends React.Component {
       <div className="home">
         我是home组件{ msg }
         <button onClick={this.changValue}>change msg value</button>
+
+        <CountHook/>
       </div>
     )
   }
