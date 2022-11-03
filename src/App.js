@@ -1,10 +1,11 @@
 import React from "react";
 import {
   BrowserRouter as Router,
-  Routes,
-  Route,
-  NavLink,
+  // Routes,
+  // Route,
+  NavLink
 } from "react-router-dom";
+
 /* 
 import Home from "./pages/Home.js";
 import About from "./pages/About.js";
@@ -20,6 +21,8 @@ import JoinUs from "./pages/JoinUs.js";
 // ----------------------------------------------------------------
 // 第二种路由声明使用方式，抽离使用编程式，更好的结合动态路由
 import GenreateRoutes from "./router/genreateRoutes.js";
+import UseMemoExample from "./hooks/useMemoExample.js";
+
 
 /**
 // react-router-dom生成页面路由方式一: 直接在dom结构中声明
@@ -82,7 +85,8 @@ export default App;
  */
 
 
-const App = () => {
+
+function App () {
   return (
     <Router>
       <div className="app">
@@ -90,11 +94,15 @@ const App = () => {
           <NavLink to="/">首页</NavLink>
           <NavLink to="/about">关于</NavLink>
           <NavLink to="/product">产品</NavLink>
+          <NavLink to="/mine">我的</NavLink>
+          <NavLink to="/redux">Redux</NavLink>
         </header>
         <main className="main">
           <GenreateRoutes></GenreateRoutes>
         </main>
-        <footer className="footer">footer</footer>
+        <footer className="footer">
+          <UseMemoExample/>
+        </footer>
       </div>
     </Router>
   )

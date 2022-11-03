@@ -4,8 +4,6 @@ function CountHook () {
   const [count, setCount] = useState(0)
   const [teacher, setTeacher] = useState({ name: 'teacher', age: 20})
 
-  console.log(count, teacher)
-
   const handleUpdate = () => {
     setTeacher(() => {
       return {
