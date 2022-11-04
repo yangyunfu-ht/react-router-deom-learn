@@ -96,6 +96,7 @@ function App () {
           <NavLink to="/product">产品</NavLink>
           <NavLink to="/mine">我的</NavLink>
           <NavLink to="/redux">Redux</NavLink>
+          <NavLink to="/transForm">过渡</NavLink>
         </header>
         <main className="main">
           <GenreateRoutes></GenreateRoutes>

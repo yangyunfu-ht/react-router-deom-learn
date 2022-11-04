@@ -3,7 +3,7 @@ import { ThemeText  } from "./Themes.js"
 
 const SecondLevel = () => {
   const themeValue = useContext(ThemeText)
-  console.log(themeValue)
+  // console.log(themeValue)
   return (
     <button style={themeValue}>change themes</button>
   )

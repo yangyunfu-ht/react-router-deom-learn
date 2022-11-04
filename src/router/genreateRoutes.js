@@ -5,7 +5,8 @@ import About from "../pages/About.js";
 import Production from "../pages/Production.js";
 import ProductionDetail from "../pages/ProductionDetail.js";
 import Mine from "../pages/Mine.js";
-const Redux = lazy(() => import("../pages/Redux.js"));
+import TransFormComponent from "../pages/TransForm.js";
+import Redux from "../pages/Redux.js"
 
 const GenreateRoutes = () => {
   return useRoutes([
@@ -38,6 +39,11 @@ const GenreateRoutes = () => {
       path: "/redux",
       name: "redux",
       element: <Redux/>
+    },
+    {
+      path: "/transForm",
+      name: "过渡",
+      element: <TransFormComponent/>
     }
   ])
 }
